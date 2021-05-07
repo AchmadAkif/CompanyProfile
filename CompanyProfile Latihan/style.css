@@ -1,0 +1,219 @@
+* {
+    scroll-behavior: smooth;
+}
+.container {
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-family: 'Viga', sans-serif;
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+}
+.nav-link {
+    margin-right: 10px;
+    font-size: 16px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0,9);
+    font-family: 'Poppins';
+    position: relative;
+    z-index: 1;
+}
+
+
+/* JUMBOTRON */
+.jumbotron {
+    height: 700px;
+    background-size: cover;
+    background-image: url(img/jumbotron-bg.jpg);
+    text-align: center;
+    position: relative;
+}
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0) 3%, rgba(0,0,0,0.8) 100%);
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .container {
+    height: 300px;
+}
+.jumbotron .display-4 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-top: 170px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 1;
+}
+.jumbotron .display-4 span {
+    font-weight: bold;
+}
+.jumbotron .tombol {
+    margin-top: -80px;
+}
+
+/* PANEL */
+.panel  {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -1px 6px 14px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 6px 14px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 14px -4px rgba(0,0,0,0.75);
+    margin-top: -100px;
+}
+.panel img {
+    float: left;
+    padding: 30px;
+    height: 140px;
+    width: 140px;
+}
+.panel h4, p {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.panel h4 {
+    margin-top: 27px;
+    font-size: 20px;
+}
+.panel p {
+    font-size: 16px;
+}
+
+/* WORKINGSPACE */
+.workingspace {
+    margin-top: 200px;
+}
+.workingspace img {
+    height: 200px;
+    width: 360px;
+}
+.workingspace .work {
+    margin-top: 40px;
+    text-align: center;
+}
+.workingspace h1 {
+    font-family: 'Poppins';
+    word-spacing: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.workingspace p {
+    color: #ababab!important;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.workingspace span {
+    font-weight: bold;
+}
+.workingspace a {
+    font-family: 'Poppins';
+    border-radius: 40px;
+    margin-top: 30px;
+}
+
+/* QUOTE */ 
+.quote {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-family: 'Poppins';
+    font-style: italic;
+}
+.quote h3 {
+    font-size: 16px;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    
+    /* NAVBAR */
+    .navbar-brand {
+        font-family: 'Viga', sans-serif;
+        font-size: 32px;
+        color: white!important;
+        
+    }
+    .nav-link {
+        font-family: 'Poppins';
+        color: white!important;
+        font-weight: 300;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        transition: 0.3s;
+        
+    }
+    .nav-link:after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #009de6;
+        width: 0%;
+        margin: auto;
+        margin-bottom: -3px;
+        transition: 0.3s;
+    }
+    .nav-link:hover:after {
+        width: 100%;
+    }
+    .tombol {
+        font-size: 16px;
+        font-family: 'Poppins';
+        
+    }
+
+
+    /* JUMBOTRON */
+    .jumbotron {
+        margin-top: -74px;
+    }
+    .jumbotron .display-4 {
+        font-size: 62px;
+        
+    }
+    .jumbotron .gradient {
+        width: 100%;
+        height: 700px;
+        
+    }
+
+    /* WORKING SPACE */
+    .workingspace img {
+        width: 536px;
+        height: 374px;
+    }
+    .workingspace h1 {
+        font-size: 60px;
+        text-align: left;
+        font-size: 50px;
+    }
+    .workingspace p {
+        text-align: left;
+        font-size: 20px;
+    }
+    .workingspace .work {
+        text-align: left;
+    }
+
+    /* QUOTE */
+   .quote {
+       text-align: center;
+       margin-top: 400px;
+   }
+   .quote h3 {
+       font-size: 30px;
+   }
+}
