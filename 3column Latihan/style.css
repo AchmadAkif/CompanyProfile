@@ -1,0 +1,157 @@
+
+
+/* CODED BY ACHMAD AKIF MAY 05 2021*/
+
+
+
+:root {
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    margin: 50px;
+}
+
+/* WHOLE CARD */
+.cards-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* EACH CARDS */
+.card-1 {
+    background-color: var(--BrightOrange);
+    padding: 30px 30px 50px;
+    border-radius: 20px 20px 0 0;
+}
+.card-2 {
+    background-color: var(--DarkCyan);
+    padding: 30px 30px 50px;
+}
+.card-3 {
+    background-color: var(--VeryDarkCyan);    
+    padding: 30px 30px 50px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* BUTTON */
+.card_btn {
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn_orange span {
+    color: var(--BrightOrange);
+}
+.btn_darkcyan span {
+    color: var(--DarkCyan);
+}
+.btn_verydarkcyan span {
+    color: var(--VeryDarkCyan);
+}
+
+
+
+/* TYPHOGRAPHY */
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-size: 3em;
+    color: var(--Verylightgray);
+    margin-bottom: 50px;
+}
+p {
+    color:var(--Transparentwhite);
+    margin-bottom: 6rem;
+}
+a {
+    text-decoration: none;
+}
+
+/* FOOTER */
+.attribution { font-size: 12px; 
+    text-align: center; margin-top: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* DESKSTOP VERSION */
+@media only screen and (min-width: 900px) {
+    html {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 100px 0 100px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    /* WHOLE CARD */
+    .cards-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* EACH CARDS */
+    .card-1 {
+        border-radius: 20px 0 0 20px;
+        width: 250px;
+        height: 400px;
+    }
+    .card-2 {
+        width: 250px;
+        height: 400px;
+
+    }
+    .card-3 {
+        border-radius: 0 20px 20px 0;
+        width: 250px;
+        height: 400px;
+
+    }
+
+    /* BUTTON */
+    .card_btn {
+        background-color: hsl(0, 0%, 100%);
+        padding: 10px;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+    .card_btn:hover {
+        background-color: hsla(0, 0%, 100%, 0.5);
+        box-shadow: 2px 5px 30px -11px rgba(0,0,0,1);
+        -webkit-box-shadow: 2px 5px 30px -11px rgba(0,0,0,1);
+        -moz-box-shadow: 2px 5px 30px -11px rgba(0,0,0,1);
+    }
+
+    /* TYPHOPGRAPHY */
+    h1 {
+        margin-bottom: 40px;
+    }
+    .card-1 p {
+        height: 76px;
+    }
+
+    /* IMG */
+    img {
+        margin-bottom: 50px;
+        width: 100px;
+    }
+}
